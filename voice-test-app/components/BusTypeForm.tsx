@@ -58,7 +58,7 @@ export default function BusTypeForm() {
                   type="radio"
                   name="busType"
                   checked={selectedOption === item.BusType}
-                   id={item.BusTypeID}
+                  id={item.BusTypeID}
                   onChange={() => setSelectedOption(item.BusType)}
                   className="w-5 h-5"
                 />

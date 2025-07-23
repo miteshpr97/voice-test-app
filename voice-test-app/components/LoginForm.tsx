@@ -35,6 +35,7 @@ export default function LoginForm() {
             type="text"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            id="email"
             className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
             required
           />
@@ -45,6 +46,7 @@ export default function LoginForm() {
           <input
             type="password"
             value={password}
+            id='password'
             onChange={(e) => setPassword(e.target.value)}
             className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
             required
@@ -53,6 +55,7 @@ export default function LoginForm() {
 
         <button
           type="submit"
+          id='loginBtn'
           className="w-full bg-blue-500 text-white font-bold py-3 rounded-lg hover:bg-blue-600 transition"
         >
           Login
